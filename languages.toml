@@ -1,0 +1,26 @@
+[[language]]
+name = "rust"
+language-servers = [ "rust-analyzer" ]
+
+[[language]]
+name = "php"
+language-servers = ["intelephense"]
+
+[language-server.intelephense]
+command = "intelephense"
+args = ["--stdio"]
+
+[language-server.emmet-lsp]
+command = "emmet-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "html"
+roots = [".git"]
+language-servers = ["emmet-lsp"]
+
+[[language]]
+name = "blade"
+# scope = "text.html.blade" # Or a more specific Blade scope if available
+# file-types = ["blade.php"]
+language-servers = ["vscode-html-language-server", "emmet-lsp"]
