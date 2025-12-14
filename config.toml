@@ -10,3 +10,9 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[keys.insert]
+"C-]" = "normal_mode"     # Maps Ctrl-] to enter normal mode
+
+[keys.select]
+"C-]" = "normal_mode"     # Maps Ctrl-] to enter normal mode
